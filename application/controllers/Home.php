@@ -13,4 +13,10 @@ class Home extends CI_Controller{
 			$this->load->view('website/layout/footer');
 		}
 
+	function obi(){
+
+		$this->load->view('website/layout/header');
+		$this->load->view('website/obi');
+		$this->load->view('website/layout/footer');
+	}
 }

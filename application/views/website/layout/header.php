@@ -3,48 +3,77 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Anime Template">
+    <meta name="keywords" content="Anime, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="<?php echo base_url('assets/images/icons.png');?>" rel="icon" Type="text/ico">
-    <script language='JavaScript'>
-    var txt="Contoh Title Bergerak";
-    var speed=300;
-    var refresh=null;
-    function action() { document.title=txt;
-    txt=txt.substring(1,txt.length)+txt.charAt(0);
-    refresh=setTimeout("action()",speed);}action();
-    </script>
-    <link rel="stylesheet" href="<?php echo base_url('assets/user/css/style1.css');?>">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="<?php echo base_url('assets/images/icon1.png');?>" rel="icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mod Bus Simulator Indonesia | Obi Kumpa</title>
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="<?php echo base_url('assets/user/css/bootstrap.min.css');?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/user/css/font-awesome.min.css');?>" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/user/css/plyr.css');?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/user/css/nice-select.css');?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/user/css/owl.carousel.min.css');?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/user/css/slicknav.min.css');?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/user/css/styles.css');?>" type="text/css">
 </head>
 
 <body>
-<nav class="navbar navbar-expand bg-dark fixed-top m-3 p-2">
-  <div class="container-fluid align-items-center">
-    <img class="m-1 p-1" src="<?php echo base_url('assets/images/icon1.png');?>" width="50px">
-    <img class="mt-1" src="<?php echo base_url('assets/images/logo1.png');?>" width="250px">
-    <div class="collapse navbar-collapse d-flex flex-row-reverse" id="navbarNav">
-      <ul class="navbar-nav align-middle">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#"><b>HOME</b></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><b>PRODUK</b></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><b>TENTANG KAMI</b></a>
-        </li>
-        <span><button class="btn btn-success"><i class="bi bi-whatsapp h5"></i> <b>BELI</b></button></span>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <!-- Header Section Begin -->
+    <header class="header fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="<?php echo site_url('home');?>">
+                            <img src="<?php echo base_url('assets/images/logo2.png');?>" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                                <li class="active"><a href="<?php echo site_url('home');?>">Homepage</a></li>
+                                <li><a href="./categories.html">Mod Vehicle <span class="bi bi-chevron-down"></span></a>
+                                    <ul class="dropdown">
+                                        <li><a href="./categories.html">Laksana</a></li>
+                                        <li><a href="./anime-details.html">Adi Putro</a></li>
+                                        <li><a href="./anime-watching.html">Tentrem</a></li>
+                                        <li><a href="./blog-details.html">New Armada</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./blog.html">Map</a></li>
+                                <li><a href="./categories.html">Livery <span class="bi bi-chevron-down"></span></a>
+                                    <ul class="dropdown">
+                                        <li><a href="./categories.html">Laksana</a></li>
+                                        <li><a href="./anime-details.html">Adi Putro</a></li>
+                                        <li><a href="./anime-watching.html">Tentrem</a></li>
+                                        <li><a href="./blog-details.html">New Armada</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="header__right">
+                        <a href="<?php echo site_url('home/obi');?>" class="search-switch">Who's Obi?</span></a>
+                        <a href="./login.html"><span class="bi bi-person"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
 
-<!-- <div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div> -->
     

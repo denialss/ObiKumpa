@@ -43,21 +43,19 @@
                         <nav class="header__menu mobile-menu">
                             <ul>
                                 <li class="active"><a href="<?php echo site_url('home');?>">Homepage</a></li>
-                                <li><a href="./categories.html">Mod Vehicle <span class="bi bi-chevron-down"></span></a>
+                                <li><a href="#">Mod Vehicle <span class="bi bi-chevron-down"></span></a>
                                     <ul class="dropdown">
-                                        <li><a href="./categories.html">Laksana</a></li>
-                                        <li><a href="./anime-details.html">Adi Putro</a></li>
-                                        <li><a href="./anime-watching.html">Tentrem</a></li>
-                                        <li><a href="./blog-details.html">New Armada</a></li>
+                                        <li><a href="<?php echo site_url('home/modbus');?>">Bus</a></li>
+                                        <li><a href="<?php echo site_url('home/modtruk');?>">Truk</a></li>
+                                        <li><a href="<?php echo site_url('home/modmobil');?>">Mobil</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="./blog.html">Map</a></li>
-                                <li><a href="./categories.html">Livery <span class="bi bi-chevron-down"></span></a>
+                                <li><a href="<?php echo site_url('home/map');?>">Map</a></li>
+                                <li><a href="#">Livery <span class="bi bi-chevron-down"></span></a>
                                     <ul class="dropdown">
-                                        <li><a href="./categories.html">Laksana</a></li>
-                                        <li><a href="./anime-details.html">Adi Putro</a></li>
-                                        <li><a href="./anime-watching.html">Tentrem</a></li>
-                                        <li><a href="./blog-details.html">New Armada</a></li>
+                                        <li><a href="<?php echo site_url('home/liverybus');?>">Bus</a></li>
+                                        <li><a href="<?php echo site_url('home/liverytruk');?>">Truk</a></li>
+                                        <li><a href="<?php echo site_url('home/liverymobil');?>">Mobil</a></li>
                                     </ul>
                                 </li>
                             </ul>

@@ -27,6 +27,13 @@ class Home extends CI_Controller{
 		$this->load->view('website/layout/footer');
 	}
 
+	function detailmodbus(){
+
+		$this->load->view('website/layout/header');
+		$this->load->view('website/detailmodbus');
+		$this->load->view('website/layout/footer');
+	}
+
 	function modtruk(){
 
 		$this->load->view('website/layout/header');

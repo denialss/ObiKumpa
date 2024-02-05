@@ -36,7 +36,7 @@
                                             <li>Asxfm</li>
                                             <li>Movie</li>
                                         </ul>
-                                        <h5><a href="#">SR3 Ultimate Hino RM280 by ASXFM</a></h5>
+                                        <h5><a href="<?php echo site_url('home/detailmodbus');?>">SR3 Ultimate Hino RM280 by ASXFM</a></h5>
                                     </div>
                                 </div>
                             </div>
